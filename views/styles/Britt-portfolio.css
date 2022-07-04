@@ -1,0 +1,42 @@
+
+
+html {
+
+}
+
+.bodyColor {
+    background-color: #0C0032;
+    color: aliceblue;
+}
+
+.bodyContainer {
+    margin-top: 40px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.nav {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+#topName {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.footer a{
+    text-decoration: none;
+    color: aliceblue;
+
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+}
