@@ -7,6 +7,11 @@
 
     <link rel="stylesheet" href="./styles/Britt-portfolio.css">
 
+        <!-- Google font: Edu VIC WA NT Beginner -->
+        <link rel="preconnect" href="https://fonts.googleapis.com"> 
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+        <link href="https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation:wght@400;500;700&family=Edu+VIC+WA+NT+Beginner:wght@400;500;526;600;700&display=swap" rel="stylesheet">
+
     <script src="/portfolio/views/scripts/Britt-nav.js"></script>
     <script src="/portfolio/views/scripts/Britt-footer.js"></script>
 
@@ -16,13 +21,29 @@
     <nav-component></nav-component>
     <br>
     <div class="bodyContainer">
-    <h1>Hello</h1>
- 
-    
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, aut molestiae blanditiis repudiandae dolore quos, tenetur quis assumenda rem provident fugiat expedita deleniti alias fuga a facere necessitatibus veritatis veniam.</p>
+        <div class="subContainer">
+            <h1>Projects</h1>
 
+            <p>
+            Mollis aliquam ut porttitor leo a diam. Urna porttitor rhoncus dolor purus non enim praesent. Sodales neque sodales ut etiam sit amet nisl purus. Duis ut diam quam nulla porttitor massa id. Pellentesque habitant morbi tristique senectus et. Ipsum dolor sit amet consectetur adipiscing elit. Sed vulputate mi sit amet mauris commodo. Viverra aliquet eget sit amet tellus cras adipiscing enim eu. Sed pulvinar proin gravida hendrerit. Imperdiet nulla malesuada pellentesque elit eget gravida cum sociis natoque. Vitae elementum curabitur vitae nunc sed. Eget gravida cum sociis natoque penatibus et magnis dis parturient. Pellentesque habitant morbi tristique senectus. Non nisi est sit amet. Ipsum faucibus vitae aliquet nec ullamcorper sit amet risus nullam. Posuere ac ut consequat semper viverra nam libero justo. Vestibulum morbi blandit cursus risus. Aliquam sem et tortor consequat id porta. Etiam sit amet nisl purus in mollis nunc. Quis imperdiet massa tincidunt nunc pulvinar sapien et ligula.
+            </p>
+            <br>
 
+        </div>
+        <div class="mainPhoto">
+            <img src="./images/atBeach.png" alt="At Beach">
+        </div>
     </div>
     <footer-component></footer-component>
+    <script>
+        
+        const toggleButton = document.getElementsByClassName("toggle-button")[0]
+        const navBarLinks = document.getElementsByClassName("navBar-links")[0]
+
+        toggleButton.addEventListener("click", () => {
+        navBarLinks.classList.toggle("active")
+        })
+        
+    </script>
 </body>
 </html>

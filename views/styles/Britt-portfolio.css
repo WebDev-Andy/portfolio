@@ -1,42 +1,167 @@
-
+* {
+    box-sizing: border-box;
+}
 
 html {
+    scroll-behavior: smooth;
+}
 
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Edu VIC WA NT Beginner', cursive;
 }
 
 .bodyColor {
-    background-color: #0C0032;
+    background-color: #190061;
     color: aliceblue;
+}
+
+.navBar {
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0C0032;
+    border-bottom: solid #3500D3 1px;
+}
+
+.topName {
+    font-size: 2.5rem;
+    margin: 1rem;
+    margin-left: 3%;
+    margin-right: 4rem;
+    letter-spacing: .4rem;
+    font-style: italic;
+    font-weight: 700;
+}
+
+.navBar-links ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navBar-links li {
+    list-style: none;
+    padding: 1rem;
+}
+
+.navBar-links li:hover {
+    background-color: #3500D3;
+}
+
+.navBar-links li a {
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 1.5rem;
+}
+
+.toggle-button {
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: aliceblue;
+    border-radius: 10px;
+}
+
+@media (max-width: 700px) {
+    .toggle-button {
+        display: flex;
+    }
+
+    .navBar-links {
+       display: none;
+       width: 100%;
+    }
+
+    .navBar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navBar-links ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .navBar-links li {
+        text-align: center;
+    }
+
+    .navBar-links li a {
+        padding: .5rem 1rem;
+    }
+
+    .navBar-links.active {
+        display: flex;
+    }
 }
 
 .bodyContainer {
-    margin-top: 40px;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    margin-top: 5rem;
 }
 
-.nav a {
-    text-decoration: none;
-    color: aliceblue;
+.subContainer {
+    font-size: 2rem;
+    width: 100%;
+    margin-left: 10%;
+    border-right: #3500D3 solid 13px;
+    background-color: #0C0032;
+    border-radius: 30%;
 }
 
-.nav {
-    position: absolute;
-    top: 0;
-    right: 0;
+.subContainer h1 {
+    text-align: center;
 }
 
-#topName {
-    position: absolute;
-    top: 0;
-    left: 0;
+.subContainer p {
+    margin-left: 4rem;
+    padding: 4rem;
+}
+
+.mainPhoto {
+    width: 50%;
+}
+
+.mainPhoto img {
+    width: 65%;
+    margin-top: 2.25rem;
+    margin-right: 4rem;
+    float: right;
+    box-shadow: 25px 25px 0px 0px #3500D3;
+}
+
+.footer {
+    bottom: 0;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    background-color: #0C0032;
+    border-top: solid #3500D3 1px;
+}
+
+.footer p {
+    margin-left: 3rem;
 }
 
 .footer a{
     text-decoration: none;
     color: aliceblue;
-
 }
 
-.footer {
-    position: absolute;
-    bottom: 0;
-}
+

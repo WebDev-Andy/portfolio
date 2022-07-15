@@ -15,16 +15,49 @@ class Nav extends HTMLElement
     connectedCallback()
     {
         this.innerHTML =`
-        <h1 id="topName">Andrew "Andy" Britt</h1>
-        <nav class="nav">
-            <a href="#">About</a>
-            <a href="#">Resume</a>
-            <a href="#">Projects</a>
-            <a href="#">Databases</a>
-            <a href="#">APIs</a>
-            <a href="#">Bucket-List</a>
+        <nav class="navBar">
+            <div class="topName">Andrew "Andy" Britt</div>
+            <a href="#" class="toggle-button">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </a>
+            <div class="navBar-links">
+                <ul>
+                    <li><a href="./Britt-portfolio-about.html">About</a></li>
+                    <li><a href="./Britt-portfolio-resume.html">Resume</a></li>
+                    <li><a href="./Britt-portfolio-projects.html">Projects</a></li>
+                    <li><a href="./Britt-portfolio-databases.html">Databases</a></li>
+                    <li><a href="./Britt-portfolio-apis.html">APIs</a></li>
+                    <li><a href="./Britt-portfolio-bucket.html">Bucket-List</a></li>
+                </ul>
+            </div>
         </nav>`;
     }
+
+
 }
 
+
+
 customElements.define("nav-component", Nav);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

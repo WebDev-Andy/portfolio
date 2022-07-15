@@ -7,6 +7,12 @@
 
     <link rel="stylesheet" href="./styles/Britt-portfolio.css">
 
+    <!-- Google font: Edu VIC WA NT Beginner -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation:wght@400;500;700&family=Edu+VIC+WA+NT+Beginner:wght@400;500;526;600;700&display=swap" rel="stylesheet">
+
+    <!-- Adding javaScript files for Header & Footer -->
     <script src="/portfolio/views/scripts/Britt-nav.js"></script>
     <script src="/portfolio/views/scripts/Britt-footer.js"></script>
 
@@ -16,13 +22,23 @@
     <nav-component></nav-component>
     <br>
     <div class="bodyContainer">
-    <h1>Hello</h1>
+    <h1>Landing</h1>
  
     
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, aut molestiae blanditiis repudiandae dolore quos, tenetur quis assumenda rem provident fugiat expedita deleniti alias fuga a facere necessitatibus veritatis veniam.</p>
+    <p></p>
 
 
     </div>
     <footer-component></footer-component>
+    <script>
+        
+        const toggleButton = document.getElementsByClassName("toggle-button")[0]
+        const navBarLinks = document.getElementsByClassName("navBar-links")[0]
+
+        toggleButton.addEventListener("click", () => {
+        navBarLinks.classList.toggle("active")
+        })
+        
+    </script>
 </body>
 </html>
