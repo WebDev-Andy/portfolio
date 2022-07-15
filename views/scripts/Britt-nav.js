@@ -24,7 +24,7 @@ class Nav extends HTMLElement
             </a>
             <div class="navBar-links">
                 <ul>
-                    <li><a href="./Britt-portfolio-index.html">About</a></li>
+                    <li><a href="./index.html">About</a></li>
                     <li><a href="./Britt-portfolio-resume.html">Resume</a></li>
                     <li><a href="./Britt-portfolio-projects.html">Projects</a></li>
                     <li><a href="./Britt-portfolio-databases.html">Databases</a></li>
